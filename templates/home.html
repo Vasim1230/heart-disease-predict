@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Heart Attack Prediction</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body class="homedr">
+        <div class="container">
+            <h1 style="color: black;">RESULTS</h1>
+
+            {%if data == '0'%}
+            <h1 style="color: green;">The Patient is Normal</h1>
+            
+
+            {%else%}
+            <h1 style ="Color : rgb(128, 0, 0)">The Patient has Hear Attack</h1>
+            
+
+            {%endif%}
+
+            <br>
+            <a href="{{url_for('man')}}">Go back to home page</a>
+            <br>
+        </div>
+
+        <table class="table1">
+            <thead class="threads">
+                <tr>
+                    <th class="head2" scope="col">Index</th>
+                    <th class="head2" scope="col">Information</th>
+                    <th class="head2" scope="col">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <th>Age</th>
+                    <th>{{ data1 }}</th>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <th>Sex</th>
+                    <th>{{ data2 }}</th>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <th>CP</th>
+                    <th>{{ data3 }}</th>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <th>Trestbps</th>
+                    <th>{{ data13 }}</th>
+                </tr><tr>
+                    <th scope="row">5</th>
+                    <th>cholestrol</th>
+                    <th>{{ data4 }}</th>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <th>FBS</th>
+                    <th>{{ data5 }}</th>
+                </tr>
+
+                <tr>
+                    <th scope="row">7</th>
+                    <th>RestECG</th>
+                    <th>{{ data6 }}</th>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <th>Talach</th>
+                    <th>{{ data7 }}</th>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <th>Exang</th>
+                    <th>{{ data8 }}</th>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <th>Oldpeak</th>
+                    <th>{{ data9 }}</th>
+                </tr>
+                <tr>
+                    <th scope="row">11</th>
+                    <th>Slope</th>
+                    <th>{{ data10 }}</th>
+                </tr>
+                <tr>
+                    <th scope="row">12</th>
+                    <th>CA</th>
+                    <th>{{ data11 }}</th>
+                </tr>
+                <tr>
+                    <th scope="row">13</th>
+                    <th>Thal</th>
+                    <th>{{ data12 }}</th>
+                </tr>
+
+                
+                    
+
+            </tbody>
+        </table>
+    </body>
+</html>

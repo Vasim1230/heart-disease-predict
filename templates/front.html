@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Heart Attack Prediction</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <section class="container">
+            <header>Heart Attack Prediction</header>
+            <form method="post" action="{{ url_for('home')}}" class="form">
+                <div class="input-box">
+                    <label>Age</label>
+                    <input type="number" placeholder="age"name="age" inputmode="decimal" min="0" max="100" required/>
+                </div>
+
+                <div class="input-box">
+                    <label>Sex</label>
+                    <input type="number" placeholder="sex" name="sex"inputmode="decimal" min="0" max="1"required/>
+                </div>
+                <div class="input-box">
+                    <label>CP</label>
+                    <input type="number" placeholder="CP" name="cp" inputmode="decimal" min="0" max="1"required/>
+                </div>
+                <div class="input-box">
+                    <label>TresBPS</label>
+                    <input type="number" placeholder="trestbps" name="trestbps" inputmode="decimal" min="0" max="200"required/>
+                </div>
+                <div class="input-box">
+                    <label>Cholestrol</label>
+                    <input type="number" placeholder="chol" name="chol" inputmode="decimal" min="0" max="500"required/>
+                </div>
+                <div class="input-box">
+                    <label>FBS</label>
+                    <input type="number" placeholder="fbs" name="fbs" inputmode="decimal" min="0" max="1"required/>
+                </div>
+                <div class="input-box">
+                    <label>RestECG</label>
+                    <input type="number" placeholder="restecg" name="restecg" inputmode="decimal" min="0" max="1"required/>
+                </div>
+                <div class="input-box">
+                    <label>Talach</label>
+                    <input type="number" placeholder="talach" name="talach" inputmode="decimal" min="0" max="200"required/>
+                </div>
+                <div class="input-box">
+                    <label>Exang</label>
+                    <input type="number" placeholder="exang" name="exang" inputmode="decimal" min="0" max="1"required/>
+                </div>
+                <div class="input-box">
+                    <label>Oldpeak</label>
+                    <input type="number" placeholder="oldpeak" name="oldpeak" inputmode="decimal" min="0" max="10"required/>
+                </div>
+                <div class="input-box">
+                    <label>Slope</label>
+                    <input type="number" placeholder="slope" name="slope" inputmode="decimal" min="0" max="2"required/>
+                </div>
+                <div class="input-box">
+                    <label>CA</label>
+                    <input type="number" placeholder="ca" name="ca" inputmode="decimal" min="0" max="2"required/>
+                </div>
+                <div class="input-box">
+                    <label>Thal</label>
+                    <input type="number" placeholder="thal" name="thal" inputmode="decimal" min="0" max="3"required/>
+                </div>
+                
+                
+
+                <button>Submit <a href="{{ url_for('home')}}"></a></button>
+            </form>
+        </section>
+    </body>
+</html>
