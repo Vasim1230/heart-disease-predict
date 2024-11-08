@@ -54,8 +54,14 @@ Step 1: Clone the repository
 Clone the repository to your local machine:
 
 Step 2: Install dependencies
-
-Install the required Python libraries listed in the requirements.txt file:
+```bash
+pip install Flask
+pip install scikit-learn
+pip install xgboost
+pip install pandas
+pip install numpy
+pip install matplotlib
+```
 
 
 Step 3: Train the model 
